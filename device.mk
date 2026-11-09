@@ -49,6 +49,11 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 # Extra VNDK Versions
 PRODUCT_EXTRA_VNDK_VERSIONS := 31
 
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0-impl \
+    android.hardware.gatekeeper@1.0-service
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 31
 
