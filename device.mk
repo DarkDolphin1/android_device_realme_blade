@@ -18,6 +18,22 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Virtual A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
+# A/B OTA
+ENABLE_VIRTUAL_AB := true
+AB_OTA_UPDATER := true
+
+AB_OTA_PARTITIONS := \
+    boot \
+    dtbo \
+    system \
+    system_ext \
+    vendor \
+    odm \
+    product \
+    vbmeta \
+    vbmeta_system \
+    vbmeta_vendor
+
 # Boot Animation
 TARGET_SCREEN_HEIGHT := 2408
 TARGET_SCREEN_WIDTH := 1080
