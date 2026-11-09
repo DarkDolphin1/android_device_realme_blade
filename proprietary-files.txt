@@ -51,12 +51,6 @@ vendor/lib64/soundfx/libaudiopreprocessing.so
 vendor/lib64/soundfx/libaudiopreprocessing_mtk.so
 
 # Audio-Hardware
-system_ext/lib/vendor.mediatek.hardware.audio-V1-ndk.so
-system_ext/lib/vendor.mediatek.hardware.audio@7.1.so
-system_ext/lib/vendor.mediatek.hardware.audio@8.1.so
-system_ext/lib64/vendor.mediatek.hardware.audio-V1-ndk.so
-system_ext/lib64/vendor.mediatek.hardware.audio@7.1.so
-system_ext/lib64/vendor.mediatek.hardware.audio@8.1.so
 vendor/etc/init/android.hardware.audio.service.mediatek.rc
 vendor/lib/android.hardware.audio.common-util.so
 vendor/lib/android.hardware.audio.common@5.0.so
@@ -114,10 +108,6 @@ vendor/lib64/vendor.mediatek.hardware.audio@7.1.so
 
 
 # Bluetooth
-system_ext/lib64/vendor.mediatek.hardware.bluetooth.audio-V1-ndk.so
-system_ext/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so
-system_ext/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so
-system_ext/lib64/vendor.oplus.hardware.bluetooth_audio_extend@2.1.so
 vendor/etc/audio_policy_configuration_bluetooth_legacy_hal.xml
 vendor/etc/bluetooth_audio_policy_configuration.xml
 vendor/etc/bluetooth_offload_audio_policy_configuration.xml
@@ -911,11 +901,6 @@ odm/lib64/sc201cs_mipi_raw_blade_tuning.so
 odm/lib64/sc800cs_mipi_raw_blade_IdxMgr.so
 odm/lib64/sc800cs_mipi_raw_blade_tuning.so
 odm/lib64/soundfx/liboppo_audiox_sw_effects.so
-system_ext/lib/vendor.oplus.hardware.camera.slogan@1.0.so
-system_ext/lib/vendor.oplus.hardware.cameraMDM@1.0.so
-system_ext/lib64/vendor.oplus.hardware.camera.slogan-V1-ndk_platform.so
-system_ext/lib64/vendor.oplus.hardware.camera.slogan@1.0.so
-system_ext/lib64/vendor.oplus.hardware.cameraMDM@1.0.so
 vendor/lib/android.hardware.camera.common@1.0.so
 vendor/lib/android.hardware.camera.device@3.2.so
 vendor/lib/hw/vendor.mediatek.hardware.camera.atms@1.0-impl.so
@@ -1253,9 +1238,6 @@ odm/lib64/libarcsoft_sn_mtk_apu.so
 odm/lib64/libarcsoft_supernight.so
 odm/lib64/libarcsoft_super_night_raw.so
 
-
-# Charger
-system_ext/etc/init/kpoc_charger.rc
 
 # Consumerir
 vendor/lib/hw/consumerir.default.so
@@ -2130,16 +2112,6 @@ vendor/lib64/android.hardware.power@1.2.so
 vendor/lib64/hw/power.default.so
 
 # Radio
-system_ext/lib/android.hardware.radio.config@1.1.so
-system_ext/lib/android.hardware.radio.config@1.2.so
-system_ext/lib/android.hardware.radio.config@1.3.so
-system_ext/lib/android.hardware.radio@1.5.so
-system_ext/lib/android.hardware.radio@1.6.so
-system_ext/lib64/android.hardware.radio.config@1.1.so
-system_ext/lib64/android.hardware.radio.config@1.2.so
-system_ext/lib64/android.hardware.radio.config@1.3.so
-system_ext/lib64/android.hardware.radio@1.5.so
-system_ext/lib64/android.hardware.radio@1.6.so
 vendor/lib/android.hardware.radio@1.0.so
 vendor/lib/android.hardware.radio@1.1.so
 vendor/lib64/android.hardware.radio.config@1.0.so
@@ -2176,7 +2148,6 @@ vendor/lib64/libSensorSave.so
 vendor/lib64/libsensor_custom.so
 
 # Soter
--system_ext/app/SoterService/SoterService.apk
 vendor/etc/init/vendor.trustonic.soter@1.0-service.rc
 -vendor/etc/vintf/manifest/manifest_soter_aidl.xml
 vendor/lib/libSoterProvision.so
