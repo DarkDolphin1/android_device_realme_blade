@@ -1669,7 +1669,6 @@ odm/lib64/android.hardware.keymaster-V3-ndk_platform.so
 odm/lib64/libtrustonic_keybox_ca.so
 vendor/etc/init/android.hardware.keymaster@4.1-service.trustonic.rc
 vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc
-vendor/etc/permissions/android.hardware.hardware_keystore.km41.xml
 vendor/lib/android.system.wifi.keystore@1.0.so
 vendor/lib/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
 vendor/lib/libkeystore-wifi-hidl.so
