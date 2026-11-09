@@ -2313,7 +2313,6 @@ vendor/etc/init/nvram_daemon.rc
 vendor/etc/init/tee.rc
 vendor/etc/init/tetheroffloadservice.rc
 vendor/etc/init/trustonic.rc
-vendor/etc/init/vendor_flash_recovery.rc
 vendor/etc/init/volte_clientapi_ua.rc
 vendor/etc/init/vpud.rc
 vendor/etc/init/wlan_assistant.rc
