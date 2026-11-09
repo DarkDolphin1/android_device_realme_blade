@@ -4,7 +4,7 @@
 #
 
 # Inherit from the custom device configuration.
-$(call inherit-product, device/realme/rmx3612/device.mk)
+$(call inherit-product, device/realme/blade/device.mk)
 
 # Inherit from the LineageOS configuration.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
