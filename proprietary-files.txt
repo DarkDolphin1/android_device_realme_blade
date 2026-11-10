@@ -2698,7 +2698,6 @@ vendor/etc/virtual-spn-conf-by-efpnn.xml
 vendor/etc/virtual-spn-conf-by-efspn.xml
 vendor/etc/virtual-spn-conf-by-imsi.xml
 vendor/etc/wfd_source_capability.csv
-vendor/lib/android.frameworks.stats-V1-ndk_platform.so
 vendor/lib/android.hardware.boot@1.0.so
 vendor/lib/android.hardware.boot@1.1.so
 vendor/lib/android.hardware.boot@1.2.so
@@ -2982,7 +2981,6 @@ vendor/lib/mt6833/libpq_prot.so
 vendor/lib/shared-file-region-aidl-cpp.so
 vendor/lib/soundfx/libhapticgenerator.so
 vendor/lib/VP9SecureVdecCA.so
-vendor/lib64/android.frameworks.stats-V1-ndk_platform.so
 vendor/lib64/android.hardware.boot@1.0.so
 vendor/lib64/android.hardware.boot@1.1.so
 vendor/lib64/android.hardware.boot@1.2.so
