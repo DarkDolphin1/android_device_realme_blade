@@ -19,7 +19,8 @@
         "862000",
         "756000",
         "703000",
-        "650000"
+        "650000",
+        "500000"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
@@ -42,7 +43,8 @@
         "862000",
         "756000",
         "703000",
-        "650000"
+        "650000",
+        "500000"
       ],
       "ResetOnInit": true
     },
@@ -65,7 +67,8 @@
         "1042000",
         "985000",
         "898000",
-        "840000"
+        "840000",
+        "725000"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
@@ -88,7 +91,8 @@
         "1042000",
         "985000",
         "898000",
-        "840000"
+        "840000",
+        "725000"
       ],
       "ResetOnInit": true
     },
@@ -111,8 +115,8 @@
         "50",
         "0"
       ],
-      "ResetOnInit": true,
-      "DefaultIndex": 0
+      "DefaultIndex": 0,
+      "ResetOnInit": true
     },
     {
       "Name": "GPUDVFSInterval",
@@ -122,8 +126,113 @@
         "75",
         "50"
       ],
-      "ResetOnInit": true,
-      "DefaultIndex": 0
+      "DefaultIndex": 0,
+      "ResetOnInit": true
+    },
+    {
+      "Name": "GPUBoostFloor",
+      "Path": "/sys/kernel/ged/hal/custom_boost_gpu_freq",
+      "Values": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "GPUUpbound",
+      "Path": "/sys/kernel/ged/hal/custom_upbound_gpu_freq",
+      "Values": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44"
+      ],
+      "DefaultIndex": 0,
+      "ResetOnInit": true
     },
     {
       "Name": "TASchedtuneBoost",
@@ -151,8 +260,8 @@
         "50",
         "100"
       ],
-      "ResetOnInit": true,
-      "DefaultIndex": 0
+      "DefaultIndex": 0,
+      "ResetOnInit": true
     },
     {
       "Name": "TABoostPerf",
@@ -162,8 +271,8 @@
         "50",
         "100"
       ],
-      "ResetOnInit": true,
-      "DefaultIndex": 0
+      "DefaultIndex": 0,
+      "ResetOnInit": true
     },
     {
       "Name": "BGBoostPerf",
@@ -173,8 +282,8 @@
         "50",
         "100"
       ],
-      "ResetOnInit": true,
-      "DefaultIndex": 0
+      "DefaultIndex": 0,
+      "ResetOnInit": true
     },
     {
       "Name": "DRAMOppMin",
@@ -185,8 +294,8 @@
         "1",
         "2"
       ],
-      "ResetOnInit": true,
-      "DefaultIndex": 0
+      "DefaultIndex": 0,
+      "ResetOnInit": true
     },
     {
       "Name": "EASMigrateCost",
@@ -203,8 +312,8 @@
         "8000000",
         "10000000"
       ],
-      "ResetOnInit": true,
-      "DefaultIndex": 3
+      "DefaultIndex": 3,
+      "ResetOnInit": true
     },
     {
       "Name": "CCIFreqMode",
@@ -213,8 +322,8 @@
         "0",
         "1"
       ],
-      "ResetOnInit": true,
-      "DefaultIndex": 0
+      "DefaultIndex": 0,
+      "ResetOnInit": true
     },
     {
       "Name": "UclampMin",
