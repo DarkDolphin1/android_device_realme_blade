@@ -53,6 +53,9 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-service \
     android.hardware.graphics.composer@2.1-resources \
     android.hardware.graphics.composer@2.1 \
+    android.hardware.memtrack@1.0-service \
+    android.hardware.memtrack@1.0-impl \
+    libdrm.vendor
 
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
