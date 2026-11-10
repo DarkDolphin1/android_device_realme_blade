@@ -93,6 +93,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.cas@1.2-service-lazy
 
+# DRM
+PRODUCT_PACKAGES += \
+    com.android.hardware.drm.clearkey
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-service \
