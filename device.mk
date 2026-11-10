@@ -113,6 +113,10 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 # Extra VNDK Versions
 PRODUCT_EXTRA_VNDK_VERSIONS := 31
 
+# HIDL
+PRODUCT_PACKAGES += \
+    android.hidl.allocator@1.0.vendor
+
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
@@ -191,7 +195,8 @@ PRODUCT_PACKAGES += \
 
 # Thermal
 PRODUCT_PACKAGES += \
-    android.hardware.thermal@2.0-service.mediatek
+    android.hardware.thermal@1.0-impl
+    android.hardware.thermal@2.0.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json
