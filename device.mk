@@ -57,6 +57,12 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-impl \
     android.hardware.bluetooth@1.1.vendor
 
+# Boot control
+PRODUCT_PACKAGES += \
+    android.hardware.boot@1.2-service \
+    android.hardware.boot@1.2-impl \
+    android.hardware.boot@1.2-impl.recovery
+
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
