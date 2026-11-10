@@ -52,6 +52,11 @@ PRODUCT_PACKAGES += \
 TARGET_SCREEN_HEIGHT := 2408
 TARGET_SCREEN_WIDTH := 1080
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth.audio-impl \
+    android.hardware.bluetooth@1.1.vendor
+
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
