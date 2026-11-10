@@ -149,6 +149,10 @@ PRODUCT_PACKAGES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.2.vendor:64
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.1.vendor \
