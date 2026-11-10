@@ -151,7 +151,9 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.2.vendor:64
+    android.hardware.power@1.2.vendor:64 \
+    android.hardware.power-service.mediatek-libperfmgr \
+    android.hardware.power@1.3.vendor
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -163,7 +165,9 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-	hardware/mediatek
+    hardware/google/interfaces \
+    hardware/google/pixel \
+	hardware/mediatek \
 
 # Permissions
 PRODUCT_COPY_FILES += \
