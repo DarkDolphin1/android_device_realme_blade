@@ -152,8 +152,16 @@ DEVICE_PACKAGE_OVERLAYS += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.2.vendor:64 \
-    android.hardware.power-service.mediatek-libperfmgr \
-    android.hardware.power@1.3.vendor
+    android.hardware.power@1.3.vendor \
+    android.hardware.power-service.lineage-libperfmgr \
+    vendor.mediatek.hardware.mtkpower@1.2-service.stub
+
+PRODUCT_PACKAGES += \
+    libmtkperf_client_vendor \
+    libmtkperf_client
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -167,7 +175,9 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/google/interfaces \
     hardware/google/pixel \
+    hardware/lineage/interfaces/power-libperfmgr \
 	hardware/mediatek \
+    hardware/mediatek/libmtkperf_client
 
 # Permissions
 PRODUCT_COPY_FILES += \
