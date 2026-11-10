@@ -126,6 +126,12 @@ PRODUCT_PACKAGES += \
     init.mt6833.rc \
     fstab.mt6833
 
+# Radio
+PRODUCT_PACKAGES += \
+    android.hardware.radio.config@1.3.vendor:64 \
+    android.hardware.radio@1.1.vendor \
+    android.hardware.radio@1.6.vendor:64
+    
 # Ramdisk
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/rootdir/etc/fstab.mt6833:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6833 \
