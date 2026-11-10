@@ -48,6 +48,9 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@7.0.vendor \
     android.hardware.audio.effect@7.0-impl
 
+PRODUCT_PACKAGES += \
+    libaudiopreprocessing
+
 # Boot Animation
 TARGET_SCREEN_HEIGHT := 2408
 TARGET_SCREEN_WIDTH := 1080
@@ -55,7 +58,8 @@ TARGET_SCREEN_WIDTH := 1080
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-impl \
-    android.hardware.bluetooth@1.1.vendor
+    android.hardware.bluetooth@1.1.vendor \
+    libbluetooth_audio_session
 
 # Boot control
 PRODUCT_PACKAGES += \
@@ -113,14 +117,23 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 # Extra VNDK Versions
 PRODUCT_EXTRA_VNDK_VERSIONS := 31
 
-# HIDL
-PRODUCT_PACKAGES += \
-    android.hidl.allocator@1.0.vendor
-
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
     android.hardware.gatekeeper@1.0-service
+
+# HIDL
+PRODUCT_PACKAGES += \
+    android.hidl.allocator@1.0.vendor \
+    libhidltransport \
+    libhidltransport.vendor \
+    libhwbinder \
+    libhwbinder.vendor
+
+# Keymaster
+PRODUCT_PACKAGES += \
+    libkeymaster_messages.vendor:64
+
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 31
@@ -144,7 +157,7 @@ PRODUCT_COPY_FILES += \
 # Media
 PRODUCT_PACKAGES += \
     android.hardware.media.omx@1.0-service \
-    android.hardware.media.c2@1.2.vendor
+    android.hardware.media.c2@1.2.vendor \
 
 PRODUCT_PACKAGES += \
     libcodec2_hidl@1.1.vendor \
@@ -154,6 +167,12 @@ PRODUCT_PACKAGES += \
     libavservices_minijail.vendor \
     libsfplugin_ccodec_utils.vendor \
     libcodec2_soft_common.vendor
+
+
+# Neural Networks
+PRODUCT_PACKAGES += \
+    libruy \
+    android.hardware.neuralnetworks@1.3.vendor:64
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -178,7 +197,8 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.1.vendor \
     android.hardware.sensors@2.0-ScopedWakelock.vendor \
     android.frameworks.sensorservice@1.0.vendor \
-    libsensorndkbridge
+    libsensorndkbridge \
+    sensors.dynamic_sensor_hal
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -193,6 +213,10 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.3-impl
 
+# Text classifier
+PRODUCT_PACKAGES += \
+    libtextclassifier_hash.vendor:64
+
 # # Thermal
 # PRODUCT_PACKAGES += \
 #     android.hardware.thermal@1.0-impl
@@ -203,5 +227,8 @@ PRODUCT_COPY_FILES += \
 
 # Permissions
 PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml \
-	$(DEVICE_PATH)/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml
+    frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
+
+PRODUCT_PACKAGES += \
+    android.hardware.tetheroffload.config@1.0.vendor \
+    android.hardware.tetheroffload.control@1.1.vendor
