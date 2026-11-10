@@ -72,6 +72,22 @@ PRODUCT_PACKAGES += \
 	android.frameworks.cameraservice.common@2.0.vendor \
     android.frameworks.cameraservice.device@2.0.vendor \
     android.frameworks.cameraservice.service@2.1.vendor \
+    android.hardware.camera.common-V1-ndk \
+    android.hardware.camera.common-V2-ndk \
+    android.hardware.camera.common@1.0 \
+    android.hardware.camera.device-V3-ndk \
+    android.hardware.camera.device@1.0 \
+    android.hardware.camera.device@3.2 \
+    android.hardware.camera.device@3.3 \
+    android.hardware.camera.device@3.4 \
+    android.hardware.camera.device@3.5 \
+    android.hardware.camera.device@3.6 \
+    android.hardware.camera.metadata-V3-ndk \
+    android.hardware.camera.provider-V3-ndk \
+    android.hardware.camera.provider@2.4 \
+    android.hardware.camera.provider@2.5 \
+    android.hardware.camera.provider@2.6 \
+    libcamera_metadata
 
 # Display
 PRODUCT_PACKAGES += \
