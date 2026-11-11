@@ -21,3 +21,6 @@ on post-fs
 # Disable AOSP RIL if MTK RIL is up
 on property:vendor.ril.mtk=1
     stop vendor.ril-daemon
+
+on init
+    setprop sys.usb.ffs.aio_compat 1
