@@ -243,3 +243,5 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.tetheroffload.config@1.0.vendor \
     android.hardware.tetheroffload.control@1.1.vendor
+
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
