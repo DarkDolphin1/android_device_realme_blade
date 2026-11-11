@@ -140,8 +140,17 @@ PRODUCT_SHIPPING_API_LEVEL := 31
 
 # Init
 PRODUCT_PACKAGES += \
+    fstab.mt6833 \
     init.mt6833.rc \
-    fstab.mt6833
+    init.aee.rc \
+    init.ago.rc \
+    init.connectivity.rc \
+    init.connectivity.common.rc \
+    init.modem.rc \
+    init.project.rc \
+    init.sensor_2_0.rc \
+    init.mt6833.usb.rc \
+    ueventd.mt6833.rc
 
 # Radio
 PRODUCT_PACKAGES += \
@@ -151,8 +160,10 @@ PRODUCT_PACKAGES += \
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/rootdir/etc/fstab.mt6833:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6833 \
-    $(DEVICE_PATH)/rootdir/etc/fstab.mt6833:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.mt6833
+    $(DEVICE_PATH)/root/etc/fstab.mt6833:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6833 \
+    $(DEVICE_PATH)/root/etc/fstab.mt6833:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.mt6833 \
+    $(DEVICE_PATH)/root/etc/init.mt6833.usb.rc:$(TARGET_COPY_OUT_RAMDISK)/init.mt6833.usb.rc \
+    
 
 # Media
 PRODUCT_PACKAGES += \
