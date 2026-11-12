@@ -1061,10 +1061,6 @@ vendor/etc/init/init.thermalloadalgod.rc
 vendor/etc/init/init.thermal_manager.rc
 vendor/lib/libthermalalgo.so
 
-# Thermal-Hardware
-vendor/lib/hw/thermal_hal.so
-vendor/lib64/hw/thermal_hal.so
-
 # Vibrator
 vendor/etc/init/vibrator-mtk-default.rc
 -vendor/etc/vintf/manifest/vibrator-mtk-default.xml
