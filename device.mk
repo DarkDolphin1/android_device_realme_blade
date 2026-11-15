@@ -141,7 +141,13 @@ PRODUCT_SHIPPING_API_LEVEL := 31
 # Init
 PRODUCT_PACKAGES += \
     init.mt6833.rc \
-    fstab.mt6833
+    fstab.mt6833.rc \
+    init.connectivity.rc \
+    init.modem.rc \
+    init.mt6833.usb.rc \
+    init.project.rc \
+    init.sensor_2_0.rc \
+    ueventd.mtk.rc
 
 # Radio
 PRODUCT_PACKAGES += \
